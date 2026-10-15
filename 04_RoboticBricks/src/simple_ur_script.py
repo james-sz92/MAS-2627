@@ -179,18 +179,19 @@ def set_tcp_by_angles(x_offset, y_offset, z_offset, x_rotate, y_rotate, z_rotate
     return script
 
 
-def popup(message, title):
+def popup(message, title, blocking=True):
     """
     Function that returns UR script for popup.
 
     Args:
         message: str. Message to display.
         title: str. Title of the popup.
+        blocking: bool. Whether the popup should be blocking.
 
     Returns:
         script: UR script
     """
-    script = 'popup("%s","%s") \n' % (message, title)
+    script = 'popup("%s","%s", blocking=%s) \n' % (message, title, blocking)
     return script
 
 
