@@ -8,7 +8,7 @@ class Brick:
     # Class attribute for default brick dimensions
     LENGTH = 32.0
     WIDTH = 15.0
-    HEIGHT = 10.0
+    HEIGHT = 9.8
 
     def __init__(self, frame=None):
         self.length = Brick.LENGTH
